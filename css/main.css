@@ -1,0 +1,221 @@
+/*
+ * Main style definitions for the timetable website.
+ * Assignment 4, CSCI 1170, Winter 2022
+ * Starter code provided by Dr. Raghav V. Sampangi
+ */
+/* General body styling, body set up as a grid container */
+body {
+  width: 80vw;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(5, auto);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Page banner styling, set to apper on the top row */
+.pg-banner {
+  grid-row: 1/2;
+  grid-column: 1/-1;
+  border-bottom: 5px solid steelblue;
+}
+
+.header-container {
+  padding: 0 0.5em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Page footer styling, set to apper on the bottom row */
+.pg-footer {
+  padding: 0 0.5em;
+  grid-row: -3/-2;
+  grid-column: 1/-1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid gold;
+  font-size: smaller;
+}
+
+/* Navigation elements - primary (main nav in the banner), secondary (smaller nav in the banner) and footer nav. */
+.primary-nav {
+  display: flex;
+}
+
+.primary-nav>a {
+  margin: 0 0 0 1em;
+  color: steelblue;
+  text-decoration: none;
+}
+
+.primary-nav>a:hover,
+.primary-nav>a:active {
+  color: maroon;
+}
+
+.secondary-nav {
+  background-color: #707372;
+  color: white;
+  font-size: smaller;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.secondary-nav>a {
+  margin: 0.5em 1em 0.5em 0;
+  color: white;
+  text-decoration: none;
+}
+
+.secondary-nav>a:hover,
+.secondary-nav>a:active {
+  color: gold;
+}
+
+.footer-nav {
+  display: flex;
+}
+
+.footer-nav>a {
+  margin: 0 0 0 1em;
+  color: steelblue;
+  text-decoration: none;
+}
+
+.footer-nav>a:hover,
+.footer-nav>a:active {
+  color: maroon;
+}
+
+/* Main content container to include all the courses */
+.container {
+  margin: 10px;
+  min-height: 300px;
+  grid-column: 1/5;
+  /* Add your styles for the Main container here */
+height: 900px;
+grid-template-columns: repeat(4, 1fr);
+
+display: grid;
+grid-row: 2;
+grid-row-gap: 10px;
+
+
+
+
+}
+
+/* Course "bag" styling */
+.course-selection-bag {
+  background-color: steelblue ;
+  width:100%;
+  color: white;
+  padding-right: 150px;
+  margin-right:115px;
+  display:flex;
+  flex-direction: column;
+  }
+
+.course-selection-bag p h2 {
+width:inherit;
+}
+
+
+/* Course info boxes */
+.course-info {
+width: 40%;
+
+}
+
+.course-offering-info {
+
+}
+
+.div-parent {
+
+   width:100%;
+  display: grid;
+	grid-template-columns: repeat(4, auto);
+	grid-template-rows: repeat(2, auto);
+  grid-gap: 10px;
+
+}
+
+
+.div-pa0{
+  background-color: lightgoldenrodyellow;
+  border: dotted 3px;
+display: flex;
+flex-direction: column;
+grid-gap: 10px;
+align-items: center;
+
+
+}
+.div-pa1{
+  background-color: lightgoldenrodyellow;
+  border: dotted 3px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  grid-gap: 10px;
+}
+.div-pa2{
+  background-color: lightgoldenrodyellow;
+  border: dotted 3px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  grid-gap: 10px;
+}
+.div-pa3{
+  background-color: lightgoldenrodyellow;
+  border: dotted 3px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  grid-gap: 10px;
+}
+.div-pa4{
+  background-color: lightgoldenrodyellow;
+  border: dotted 3px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  grid-gap: 10px;
+}
+.div-pa5{
+  background-color: lightgoldenrodyellow;
+  border: dotted 3px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  grid-gap: 10px;
+}
+.div-pa6{
+  background-color: lightgoldenrodyellow;
+  border: dotted 3px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  grid-gap: 10px;
+}
+.div-pa7{
+  background-color: lightgoldenrodyellow;
+  border: dotted 3px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  grid-gap: 10px;
+}
+@media only screen and (max-width:840px) {
+body{
+  height: 1200px;
+  display: flex;
+  flex-direction: column;}
+  
+
+}
